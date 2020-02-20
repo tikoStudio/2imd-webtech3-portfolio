@@ -2,3 +2,7 @@
 
 ## lab1
 https://github.com/Taqqhub/2imd-webtech3-lab1.git 
+
+![alt text][img]
+
+[img]: https://github.com/tikoStudio/2imd-webtech3-portfolio.git/lab1-GIT/git-screenshot.png
