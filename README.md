@@ -4,14 +4,19 @@
 
 ![alt text][img]
 
-[img]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab1-GIT/git-screenshot.PNG "screenshot img"
-
 ## [lab2](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/lab2)
 
 bewijs flexbox tutorial
 
-![flexbox froggy][img2]
+![flexbox froggy][img1]
 
 bewijs grid tutorial
 
 ![css grid garden][img2]
+
+
+[img]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab1-GIT/git-screenshot.PNG "screenshot img"
+
+[img1]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab2/flexbox-froggy.PNG "screenshot flexbox-froggy"
+
+[img2]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab2/css-grid.PNG "screenshot css-grid garden"
