@@ -3,7 +3,7 @@ body {
     font-family: sans-serif;
 }
 section{
-    background-image: url("festival.jpg");
+    background-image: url("images/festival.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width:400px;
