@@ -2,7 +2,7 @@
 
 ## bewijs flexbox tutorial
 
-![flexbox froggy][img2]
+![flexbox froggy][img1]
 
 ## bewijs grid tutorial
 
