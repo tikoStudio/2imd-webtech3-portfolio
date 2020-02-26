@@ -43,6 +43,7 @@ p {
     }
 }
 
+
 @media (min-width: 1000px) {
     .box {
         width: 150px;
@@ -70,5 +71,8 @@ p {
         width: 850px;
         justify-content: space-between;
         margin-top: -240px;
+    }
+    .tabloid:last-child .row .box {
+        margin-bottom: 10px;
     }
 }
