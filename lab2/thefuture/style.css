@@ -43,6 +43,14 @@ p {
     }
 }
 
+@media (min-width: 700px) and (max-width: 1000px) {
+    .yellow {
+        margin-top: -230px;
+    }
+    #final {
+        margin-top: 140px;
+    }
+}
 
 @media (min-width: 1000px) {
     .box {
