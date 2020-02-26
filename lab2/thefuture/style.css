@@ -1,0 +1,21 @@
+p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.box {
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
