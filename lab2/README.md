@@ -8,7 +8,11 @@
 
 ![css grid garden][img2]
 
+bewijs oefeningen: 
 
+the future: https://codepen.io/tikostudio/pen/RwPpyeL
+
+imdTicket: https://codepen.io/tikostudio/pen/XWbMqob
 
 
 [img1]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab2/flexbox-froggy.PNG "screenshot flexbox-froggy"

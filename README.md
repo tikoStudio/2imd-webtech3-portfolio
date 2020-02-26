@@ -14,6 +14,11 @@ bewijs grid tutorial
 
 ![css grid garden][img2]
 
+bewijs oefeningen:
+
+the future: https://codepen.io/tikostudio/pen/RwPpyeL
+
+IMDticket: https://codepen.io/tikostudio/pen/XWbMqob
 
 [img]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab1-GIT/git-screenshot.PNG "screenshot img"
 
