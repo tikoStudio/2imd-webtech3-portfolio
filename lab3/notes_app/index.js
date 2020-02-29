@@ -45,11 +45,11 @@ class Note {
     remove(){
       // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
       // in this function, 'this' will refer to the current note element
-      let removeFromArray = JSON.parse(localStorage.getItem("localData"));
-      let getArrayIndex = removeFromArray.indexOf(this); //outputs -1
-      removeFromArray.splice(getArrayIndex, 1);
-      localStorage.setItem("localData", JSON.stringify(removeFromArray));
-      console.log(removeFromArray);
+      let localArray = JSON.parse(localStorage.getItem("localData"));
+      let ArrayIndex = localArray.indexOf(this); //outputs -1
+      localArray.splice(ArrayIndex, 1);
+      localStorage.setItem("localData", JSON.stringify(localArray));
+      console.log(localArray);
       this.remove();
     } 
   }
@@ -57,7 +57,7 @@ class Note {
   class App {
     constructor() {
       console.log("👊🏼 The Constructor!");
-    
+
       // HINT🤩
       // clicking the button should work
       // pressing the enter key should also work
@@ -88,7 +88,6 @@ class Note {
           note.add();
         });
       }
-      
     }
      
     createNote(e){
@@ -99,7 +98,7 @@ class Note {
       // note.saveToStorage();
       // this.reset();
 
-      let addNoteTitle = document.querySelector(`#txtAddNote`).value;
+      let addNoteTitle = document.querySelector("#txtAddNote").value;
       let note = new Note(addNoteTitle);
 
       note.add();
@@ -109,9 +108,8 @@ class Note {
     
     reset(){
       // this function should reset the form 
-      document.querySelector(`#txtAddNote`).value = ``;
+      document.querySelector("#txtAddNote").value = "";
     }
     
   }
-  
   let app = new App();
