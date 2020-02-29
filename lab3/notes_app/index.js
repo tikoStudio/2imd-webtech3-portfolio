@@ -49,6 +49,16 @@ class Note {
       // this.btnAdd = ???
       // this.btnAdd.addEventListener("click", this.createNote.bind(this));
       // this.loadNotesFromStorage();
+      this.btnAdd = document.querySelector(`#btnAddNote`);
+      this.btnAdd.addEventListener(`click`,this.createNote.bind(this));
+
+      this.enterAdd = document.querySelector(`#txtAddNote`);
+      this.enterAdd.addEventListener(`keypress`, enter => {
+        if(enter.keyCode == 13) {
+          this.createNote.bind(this);
+        }
+      });
+      this.loadNotesFromStorage();
     }
     
     loadNotesFromStorage() {
@@ -64,10 +74,16 @@ class Note {
       // note.add();
       // note.saveToStorage();
       // this.reset();
+
+      let addNoteTitle = document.querySelector(`#textAddNote`).value;
+      let note = new Note(addNoteTitle);
+
+      /* incomplete: add to localstorage */
     }
     
     reset(){
       // this function should reset the form 
+      document.querySelector(`#textAddNote`).value = ``;
     }
     
   }
