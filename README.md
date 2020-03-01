@@ -26,9 +26,15 @@ bewijs oefening:
 
 notes: https://codepen.io/tikostudio/pen/KKpqPGK?editors=1111
 
+## [mongoDB_university](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/mongodb_university)
+
+![mongodb university completion][imgmongo]
+
 
 [img]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab1-GIT/git-screenshot.PNG "screenshot img"
 
 [img1]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab2/flexbox-froggy.PNG "screenshot flexbox-froggy"
 
 [img2]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab2/css-grid.PNG "screenshot css-grid garden"
+
+[imgmongo]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/mongodb_university/mongo-db-basics-m001.png "screenshot mongodb uni"
