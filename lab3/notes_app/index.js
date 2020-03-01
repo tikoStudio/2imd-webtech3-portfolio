@@ -42,10 +42,13 @@ class Note {
       // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
       // in this function, 'this' will refer to the current note element
       let localArray = JSON.parse(localStorage.getItem("localData"));
-      let ArrayIndex = localArray.indexOf(this); //outputs -1
+      let title = this.querySelector("p").innerHTML;
+      let ArrayIndex = localArray.indexOf(title); 
       localArray.splice(ArrayIndex, 1);
       localStorage.setItem("localData", JSON.stringify(localArray));
       console.log(localArray);
+      console.log(title);
+      console.log(ArrayIndex);
       this.remove();
     } 
   }
@@ -66,6 +69,7 @@ class Note {
       this.enterAdd = document.querySelector("#txtAddNote");
       this.enterAdd.addEventListener("keydown", enter => {
         if(enter.keyCode == 13) {
+          enter.preventDefault();
           document.querySelector("#btnAddNote").click();
           return true;
         }
