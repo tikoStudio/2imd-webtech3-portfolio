@@ -26,6 +26,7 @@ bewijs oefening:
 
 notes: https://codepen.io/tikostudio/pen/KKpqPGK?editors=1111
 
+
 [img]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab1-GIT/git-screenshot.PNG "screenshot img"
 
 [img1]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab2/flexbox-froggy.PNG "screenshot flexbox-froggy"
