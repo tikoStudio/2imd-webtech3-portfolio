@@ -14,7 +14,6 @@ class Note {
 
       let removeLink = newNote.querySelector(`.card-remove`);
       removeLink.addEventListener(`click`, this.remove.bind(newNote));
-
       return newNote;
     }
     
@@ -41,6 +40,11 @@ class Note {
     remove(){
       // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
       // in this function, 'this' will refer to the current note element
+      let removeLink = this;
+      console.log(removeLink);
+      removeLink.addEventListener(`click`, e => {
+        e.preventDefault();
+      });
       let localArray = JSON.parse(localStorage.getItem(`localData`));
       let title = this.querySelector(`p`).innerHTML;
       let ArrayIndex = localArray.indexOf(title); 
@@ -49,7 +53,13 @@ class Note {
       console.log(localArray);
       console.log(title);
       console.log(ArrayIndex);
-      this.remove();
+      removeLink.classList.add("animated");
+      removeLink.classList.add("fadeOutLeft");
+      console.log(removeLink);
+      setTimeout(e => {
+         this.remove();
+      }, 500);
+      
     } 
   }
   
