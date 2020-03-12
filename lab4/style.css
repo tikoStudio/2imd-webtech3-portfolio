@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
-  color: #fff;
+}
+
+body {
+    color: #fff;
 }
 
 section.advertisement {
@@ -26,4 +29,8 @@ h1, h2, h3 {
 }
 .weather {
     margin: 0;
+}
+
+.links {
+    color: black;
 }
