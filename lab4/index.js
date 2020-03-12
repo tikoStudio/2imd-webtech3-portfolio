@@ -32,10 +32,12 @@ class WeatherData {
         let data = JSON.parse(localStorage.getItem('storedData'));
         let hour = new Date();
         hour = hour.getHours();
-        if (data[2] > hour){
-            displayWeather.innerHTML = data[0];
-            displayToday.innerHTML = data[1];
-            console.log("data from localstorage");
+        if(data != null) {
+            if (data[2] > hour){
+                displayWeather.innerHTML = data[0];
+                displayToday.innerHTML = data[1];
+                console.log("data from localstorage");
+            }
         }else {
              //sources: {@link: https://www.google.com/search?q=darksky+api+get+weather&oq=darksky+api+get+weather&aqs=chrome..69i57j33l3.4786j0j1&sourceid=chrome&ie=UTF-8#kpvalbx=_cDtqXunxBOvjkgXrpovwCg25}
         let url =  `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${this.apiKey}/${lat},${lng}`;
