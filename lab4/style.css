@@ -12,8 +12,9 @@ section.advertisement {
     background: linear-gradient(#2c3e50, #bdc3c7);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;
+    margin: 0;
 }
 
 .info {
@@ -25,12 +26,17 @@ h1, h2, h3 {
     font-size: 1.7em;
     font-family: 'Fira Sans', sans-serif;
     padding: 0.5em;
-    margin: 0;
-}
-.weather {
-    margin: 0;
 }
 
 .links {
     color: black;
+}
+
+.today {
+    display: flex;
+    justify-content: center;
+}
+
+.today p {
+    text-align: center;
 }
