@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+section.advertisement {
+    width: 336px;
+    height: 280px;
+    background: linear-gradient(#2c3e50, #bdc3c7);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.7em;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0.5em;
+    margin: 0;
+}
+.weather {
+    margin: 0;
+}
