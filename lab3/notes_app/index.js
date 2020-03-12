@@ -44,21 +44,19 @@ class Note {
       console.log(removeLink);
       removeLink.addEventListener(`click`, e => {
         e.preventDefault();
-      });
+      }); //event listener makes it so page doesn't reset to top when deleting item
       let localArray = JSON.parse(localStorage.getItem(`localData`));
       let title = this.querySelector(`p`).innerHTML;
-      let ArrayIndex = localArray.indexOf(title); 
-      localArray.splice(ArrayIndex, 1);
-      localStorage.setItem(`localData`, JSON.stringify(localArray));
-      console.log(localArray);
-      console.log(title);
-      console.log(ArrayIndex);
+      let ArrayIndex = localArray.indexOf(title); //gives the index of the clicked note
+      localArray.splice(ArrayIndex, 1); //removes the clicked notes title from localstorage
+      localStorage.setItem(`localData`, JSON.stringify(localArray)); //sends updated array to localstorage 
+      
       removeLink.classList.add("animated");
       removeLink.classList.add("fadeOutLeft");
-      console.log(removeLink);
+       
       setTimeout(e => {
          this.remove();
-      }, 500);
+      }, 500);//add classes from animate.css and set timer to delete note from page after animation
       
     } 
   }
