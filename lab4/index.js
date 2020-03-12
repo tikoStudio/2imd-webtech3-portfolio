@@ -26,13 +26,12 @@ class WeatherData {
     }
 
     getCurrentWeather(lat, lng) {
+        //sources: {@link: https://stackoverflow.com/questions/45561610/how-can-i-remove-local-storage-after-one-hour/45561666}
         let displayWeather = document.querySelector(`.weather`);
         let displayToday =  document.querySelector(`.later`);
         let data = JSON.parse(localStorage.getItem('storedData'));
         let hour = new Date();
         hour = hour.getHours();
-        console.log(hour);
-        console.log(data[2])
         if (data[2] > hour){
             displayWeather.innerHTML = data[0];
             displayToday.innerHTML = data[1];
@@ -48,7 +47,7 @@ class WeatherData {
                 displayWeather.innerHTML = weather.currently.summary;
                 displayToday.innerHTML = weather.hourly.summary;
 
-                //sources: {@link: https://stackoverflow.com/questions/45561610/how-can-i-remove-local-storage-after-one-hour/45561666}
+                //local storage
                 let weatherData = [displayWeather.innerHTML,displayToday.innerHTML];
                 let timeStamp = new Date();
                 weatherData.push(timeStamp.getHours() + 1);
@@ -56,10 +55,21 @@ class WeatherData {
             });
             console.log("data from API");
         }
-        
+        this.getMovies();
+    }
 
-       
-
+    getMovies() {
+        let url = "https://api.themoviedb.org/3/discover/movie?api_key=b4b3ab05bf62bca83e2170338029dac5&language=en-US&sort_by=popularity.desc";
+        fetch(url)
+            .then(response =>{
+                return response.json();
+            })
+            .then(movie => {
+                console.log(movie.results[0].poster_path);
+                let moviepath = `http://image.tmdb.org/t/p/w500/${movie.results[0].poster_path}`;
+                let place = document.querySelector(`.images`);
+                place.innerHTML =  `<img src="${moviepath}" alt="poster of the most popular movie right now" class="movieposter">`;
+            });
     }
 }
 

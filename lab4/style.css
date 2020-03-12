@@ -30,6 +30,9 @@ h1, h2, h3, h4 {
 
 .links {
     color: black;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 .today {
@@ -39,4 +42,10 @@ h1, h2, h3, h4 {
 
 .today p {
     text-align: center;
+}
+
+.movieposter {
+    width: 336px;
+    display: flex;
+    justify-content: center;
 }
