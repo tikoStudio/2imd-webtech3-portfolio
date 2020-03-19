@@ -9,7 +9,7 @@ router.get('/', messagesController.getAll)
 router.get('/:id', messagesController.getOne)
 
 //POST: /api/v1/messages -> save message to mongoDB
-router.post('/',messagesController.postAll)
+router.post('/',messagesController.post)
 
 //PUT: /api/v1/messages/:id -> update a message from mongoDB
 router.put("/:id", messagesController.update)

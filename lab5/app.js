@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 const apiv1Messages = require('./routes/api/v1/messages');
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/messageAPI', {useNewUrlParser: true, useUnifiedTopology: true});
 var app = express();
 
 // view engine setup
