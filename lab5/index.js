@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const apiv1Messages = require('./routes/api/v1/messages');
+const apiv1Messages = require('./routers/api/v1/messages');
 
 
 

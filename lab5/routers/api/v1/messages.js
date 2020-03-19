@@ -1,30 +1,21 @@
 const express = require('express')
 const router = express.Router()
+const messagesController = require('../../../controllers/api/v1/messages')
 
 //GET: /api/v1/messages -> show messages from mongoDB
-router.get('/', (req, res) => {
-    res.send("get messages");
-})
+router.get('/', messagesController.getAll)
 
 //GET: /api/v1/messages/:id -> show specific message from mongoDB
-router.get('/:id', (req, res) => {
-    res.send("get message " + req.params.id);
-})
+router.get('/:id', messagesController.getOne)
 
 //POST: /api/v1/messages -> save message to mongoDB
-router.post('/', (req, res) => {
-    res.send("Post messages");
-})
+router.post('/',messagesController.postAll)
 
 //PUT: /api/v1/messages/:id -> update a message from mongoDB
-router.put("/:id", (req, res) => {
-    res.send("Delete message " + req.params.id);
-})
+router.put("/:id", messagesController.update)
 
 //DELETE: /api/v1/messages/:id ->delete message from mongoDB
-router.delete("/:id", (req, res) => {
-    res.send("Delete message " + req.params.id);
-})
+router.delete("/:id", messagesController.remove)
 
 //GET: /api/v1/messages?user=username -> show al messages from specific user from monogDB
 /*router.get("?user=:username", (req, res) => {
