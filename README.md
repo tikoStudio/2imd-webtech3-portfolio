@@ -32,6 +32,12 @@ bewijs oefening:
 
 weather advertisement: https://codepen.io/tikostudio/pen/qBdoWgL?editors=1010
 
+##[lab](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/lab5)
+
+bewijs oefening:
+
+nodejs api: https://codepen.io/tikostudio/pen/bGdjNWr?editors=1011
+
 ## [mongoDB_university](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/mongodb_university)
 
 ![mongodb university completion][imgmongo]
