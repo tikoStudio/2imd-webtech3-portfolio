@@ -18,8 +18,6 @@ router.put("/:id", messagesController.update)
 router.delete("/:id", messagesController.remove)
 
 //GET: /api/v1/messages?user=username -> show al messages from specific user from monogDB
-/*router.get("?user=:username", (req, res) => {
-    res.send("get message of " + req.params.username);
-})*/
+/*router.get("?user=:username", messagesController.getAllUser)*/
 
 module.exports = router;
