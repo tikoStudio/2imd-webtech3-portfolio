@@ -32,7 +32,7 @@ bewijs oefening:
 
 weather advertisement: https://codepen.io/tikostudio/pen/qBdoWgL?editors=1010
 
-##[lab](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/lab5)
+## [lab5](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/lab5)
 
 bewijs oefening:
 
