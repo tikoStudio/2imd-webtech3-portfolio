@@ -2,7 +2,7 @@
 
 ## [lab1](https://github.com/Taqqhub/2imd-webtech3-lab1.git)
 
-![alt text][img]
+![tutorial git][img]
 
 ## [lab2](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/lab2)
 
@@ -37,7 +37,7 @@ weather advertisement: https://codepen.io/tikostudio/pen/qBdoWgL?editors=1010
 ![mongodb university completion][imgmongo]
 
 
-[img]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab1-GIT/git-screenshot.PNG "screenshot img"
+[img]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab1/git-screenshot.PNG "screenshot img"
 
 [img1]: https://github.com/tikoStudio/2imd-webtech3-portfolio/blob/master/lab2/flexbox-froggy.PNG "screenshot flexbox-froggy"
 
