@@ -22,10 +22,12 @@ const getAll = (req, res) => {
 
 //GET ONE MESSAGE
 const getOne = (req, res) => {
-    res.json({
-        "status": "success",
-        "message": "GETTING message with id " + req.params.id
-    })
+    Message.find({_id: req.params.id}, (err, docs) => {
+        res.json({
+            "status": "success",
+            "message": docs
+        })
+    }) 
 }
 
 //POST  MESSAGE
@@ -47,27 +49,37 @@ const post =  (req, res) => {
 
 //PUT UPDATE ONE MESSAGE
 const update = (req, res) => {
-    res.json({
-        "status": "success",
-        "message": "UPDATING message with id " + req.params.id
+    let update = "updated message"
+    Message.findByIdAndUpdate({_id: req.params.id}, {text: update}, (err, docs) => {
+        if(!err) {
+            res.json({
+                "status": "success",
+                "message": update
+            })
+        }
     })
 }
 
 //DELETE ONE MESSAGE
 const remove = (req, res) => {
-    res.json({
-        "status": "success",
-        "message": "REMOVING message with id " + req.params.id
+    Message.findByIdAndDelete({_id: req.params.id}, (err, docs) => {
+        res.json({
+            "status": "success",
+            "message": "REMOVING message with id " + req.params.id
+        })
     })
 }
 
 //GET ALL MESSAGE FROM ONE USER
 const getAllUser = (req, res) => {
-    res.json({
-        "status": "success",
-        "message": "GETTING messages from user " + req.params.user
+    Message.find({user: req.params.user}, (err, docs) => {
+        res.json({
+            "status": "success",
+            "message": docs
+        })
     })
-}
+    }
+    
 
 
 module.exports.getAll = getAll;
