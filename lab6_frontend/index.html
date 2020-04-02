@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .goingInsane {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 100px;
+            background-color: rgb(73, 65, 65);
+            color: #fff;
+        }
+        .big {
+            display: flex;
+            flex-direction: column;
+        }
+        .small {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div class="goingInsane">
+        <select name="country" id="country">
+            <option value="Belgium">Belgium</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Luxemburg">Luxembourg</option>
+        </select>
+ 
+        <input type="number" class="cases" placeholder="amount of cases reported">
+ 
+         <button class="btn btn--primary login__btn">Let's go</button>
+    </div>
+
+    <div class="goingInsane">
+        <div class=big>
+            <div class="small"><p>Belgium active cases: </p><p class="smalltext b"></p></div>
+            <div class="small"><p>Netherlands active cases: </p><p class="smalltext n"></p></div>
+            <div class="small"><p>Luxembourg active cases: </p><p class="smalltext l"></p></div>
+        </div>
+    </div>
+       
+    <script src="http://localhost:3000/primus/primus.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
