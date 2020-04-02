@@ -38,6 +38,10 @@ bewijs oefening:
 
 nodejs api: https://codepen.io/tikostudio/pen/bGdjNWr?editors=1011
 
+## [lab6](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/lab6)
+
+https://share.getcloudapp.com/eDuxdW72
+
 ## [mongoDB_university](https://github.com/tikoStudio/2imd-webtech3-portfolio/tree/master/mongodb_university)
 
 ![mongodb university completion][imgmongo]
